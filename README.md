@@ -87,7 +87,6 @@ Using the latest Arduino IDE, upload the .ino file to your Arduino Nano programm
 ### Limit speed, motor power (only required for >250W motors) and disable brake light flash
 #### Flash custom firmware
 Using one of the following apps, flash your dashboard to custom firmware that meets the local regulations:
-* Android (paid): [Xiaoflasher](https://play.google.com/store/apps/details?id=eScooter.m365Info)
 * Android (free): [ScooterHacking Utility](https://play.google.com/store/apps/details?id=sh.cfw.utility)
 * iOS (free, create firmware manually): [Scooter Companion](https://testflight.apple.com/join/RaFiBTgi) 
 
@@ -103,8 +102,8 @@ Recommended firmware params:
 Change the LIMIT parameter to adapt the step sensitivity to your wishes. A lower LIMIT will result in faster step detection but also more false-positive step detections.
 
 ## Support
-We have a Telegram group for legal electric scooter enthusiasts, join us on:
-https://t.me/joinchat/IuIjHecjckhK1h-a
+Since the update of this scooter is beyond the scope of the Telegram group, there is no support.
+Please do not discuss this version within that group.
 
 # Legal aspects in The Netherlands
 ## Relevant regulations and required modifications
@@ -141,6 +140,7 @@ drs. M.N.E.J.G. Philippens
 # Errors during compiling software
 ![image](https://user-images.githubusercontent.com/17649470/132833789-7cb4a35b-b0f8-49f3-a852-b2e957c3de99.png)
 
+```
 Arduino: 1.8.16 (Windows 10), Board: "Arduino Uno"
 arduino_nano_xiaomi-step-ws2812-stepombouw.nl:5:10: fatal error: Adafruit_NeoPixel.h: No such file or directory
 
@@ -159,12 +159,14 @@ Adafruit_NeoPixel.h: No such file or directory
 This report would have more information with
 "Show verbose output during compilation"
 option enabled in File -> Preferences.
+```
 
 You did not install the correct library. Please install the "Adafruit Neopixel" library.
 
 Error message: An error occurred while uploading the sketch
 ![image](https://user-images.githubusercontent.com/17649470/132834486-28c05987-2c25-4826-bea9-0eaa31e11ccd.png)
 
+```
 Arduino: 1.8.16 (Windows 10), Board: "Arduino Nano, ATmega328P (Old Bootloader)"
 Sketch uses 6474 bytes (21%) of program storage space. Maximum is 30720 bytes.
 Global variables use 1122 bytes (54%) of dynamic memory, leaving 926 bytes for local variables. Maximum is 2048 bytes.
@@ -177,6 +179,8 @@ avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x02
 This report would have more information with
 "Show verbose output during compilation"
 option enabled in File -> Preferences.
+```
+
 
 There are two different types of bootloaders active: Please select the other bootloader and try again.
 
