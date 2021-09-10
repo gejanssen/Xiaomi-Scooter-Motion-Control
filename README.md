@@ -138,7 +138,7 @@ Head of the Road Safety and Road Transport Department
 drs. M.N.E.J.G. Philippens
 
 # Errors during compiling software
-![image](https://user-images.githubusercontent.com/17649470/132833789-7cb4a35b-b0f8-49f3-a852-b2e957c3de99.png)
+![image](arduino-errormessage-neopixel-library-missing.png)
 
 ```
 Arduino: 1.8.16 (Windows 10), Board: "Arduino Uno"
@@ -164,7 +164,7 @@ option enabled in File -> Preferences.
 You did not install the correct library. Please install the "Adafruit Neopixel" library.
 
 Error message: An error occurred while uploading the sketch
-![image](https://user-images.githubusercontent.com/17649470/132834486-28c05987-2c25-4826-bea9-0eaa31e11ccd.png)
+![image](arduino-errormessage-false-bootloader.png)
 
 ```
 Arduino: 1.8.16 (Windows 10), Board: "Arduino Nano, ATmega328P (Old Bootloader)"
@@ -184,5 +184,5 @@ option enabled in File -> Preferences.
 
 There are two different types of bootloaders active: Please select the other bootloader and try again.
 
-![image](https://user-images.githubusercontent.com/17649470/132834781-9ed2ac79-a384-4f27-b003-b4ac3abec37f.png)
+![image](arduino-errormessage-change-bootloader.png)
 
