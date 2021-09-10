@@ -1,3 +1,9 @@
+# Reason for fork:
+This code is forked from https://github.com/jelzo/Xiaomi-Scooter-Motion-Control
+I want two updates.
+ - Feedback via ws2812 led about power
+ - Gass trottle enabled (not legal)
+
 #  Electric scooter motion control adaptation
 A small hardware and software modification to legalize electric  Segway-Ninebot ES/MAX/Xiaomi M365-series scooters in The Netherlands.
 
@@ -16,6 +22,9 @@ TO THE FULL EXTEND PERMISSIBLE BY LAW, THE DEVELOPER DISCLAIMS ALL WARRANTIES, E
 
 # How it works
 An Arduino Nano will be used to read out the serial-bus of the scooter. The speedometer will be monitored if there are any kicks with your feed. When there is a kick, the throttle will be opened for 1-5 seconds (quadratically decreasing in level). The scooter will be accepting a new kick about 300 milliseconds after throttling. The recommended driving style for good kick detection and low power consumption is: kick-boost(5s)-wait(5s)-kick-boost(5s)-wait(5s)-kick-boost(5s)-etcetera. The range of your scooter is not wildly affected by this modification.
+
+# Arduino libraries
+
 
 ## Formula
 The (simplified) formula used for calculating the throttle level (in full percentages of throttle) is: 
@@ -37,7 +46,6 @@ We recommend to purchase the following part at [the closest __local__ electronic
 * 10cm male-female prototyping cable (black, red, green and yellow)
 * USB A to Mini USB cable
 * A small cable-tie
-* Optional: [A sticker for the rear bumper](https://www.legaalsteppen.nl/)
 * Recommended: various sizes of heat shrink sleeves and hot melt glue
 
 ### Tools needed
@@ -97,6 +105,10 @@ https://t.me/joinchat/IuIjHecjckhK1h-a
 # Legal aspects in The Netherlands
 ## Relevant regulations and required modifications
 This modification is created for electric scooters in The Netherlands to comply with REGULATION (EU) No 168/2013 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the approval and market surveillance of two- or three-wheel vehicles and quadricycles. In this regulation 'pedal cycles with with pedal assistance which are equipped with an auxiliary electric motor having a maximum continuous rated power of less than or equal to 250 W, where the output of the motor is cut off when the cyclist stops pedaling and is otherwise progressively reduced and finally cut off before the vehicle speed reaches 25 km/h' are excepted from type approval and the associated laws.
+
+## Legal / Illegal?
+Please mind, after enabling of the gass trottle, the scooter is **illegal** again.
+Only for use on private roads.
 
 The script is intended to comply with above regulations and should be used in combination with modified software and hardware for the electric scooter. A road legal scooter must contain at least the following adaptations:
 * No throttle lever
