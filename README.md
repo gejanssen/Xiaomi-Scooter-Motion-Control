@@ -23,8 +23,12 @@ TO THE FULL EXTEND PERMISSIBLE BY LAW, THE DEVELOPER DISCLAIMS ALL WARRANTIES, E
 # How it works
 An Arduino Nano will be used to read out the serial-bus of the scooter. The speedometer will be monitored if there are any kicks with your feed. When there is a kick, the throttle will be opened for 1-5 seconds (quadratically decreasing in level). The scooter will be accepting a new kick about 300 milliseconds after throttling. The recommended driving style for good kick detection and low power consumption is: kick-boost(5s)-wait(5s)-kick-boost(5s)-wait(5s)-kick-boost(5s)-etcetera. The range of your scooter is not wildly affected by this modification.
 
-# Arduino libraries
+# Arduino libraries needed
+![Arduino_libraries-neo](arduino-library-timer.png?raw=true "Arduino-libraries")
+Arduino Library: Timer
 
+![Arduino_libraries-neo](arduino-library-adafruit-neopixel.png?raw=true "Arduino-libraries")
+Arduino Library: Adafruit Neopixel
 
 ## Formula
 The (simplified) formula used for calculating the throttle level (in full percentages of throttle) is: 
