@@ -1,4 +1,4 @@
-# Reason for fork:
+# Reason for fork: [ Update gass trottle ]
 This code is forked from https://github.com/jelzo/Xiaomi-Scooter-Motion-Control
 I want two updates.
  - Feedback via ws2812 led about power
