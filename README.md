@@ -137,3 +137,48 @@ On their behalf,
 Head of the Road Safety and Road Transport Department
 
 drs. M.N.E.J.G. Philippens
+
+# Errors during compiling software
+![image](https://user-images.githubusercontent.com/17649470/132833789-7cb4a35b-b0f8-49f3-a852-b2e957c3de99.png)
+
+Arduino: 1.8.16 (Windows 10), Board: "Arduino Uno"
+arduino_nano_xiaomi-step-ws2812-stepombouw.nl:5:10: fatal error: Adafruit_NeoPixel.h: No such file or directory
+
+ #include <Adafruit_NeoPixel.h>
+
+          ^~~~~~~~~~~~~~~~~~~~~
+
+compilation terminated.
+
+exit status 1
+
+Adafruit_NeoPixel.h: No such file or directory
+
+
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+
+You did not install the correct library. Please install the "Adafruit Neopixel" library.
+
+Error message: An error occurred while uploading the sketch
+![image](https://user-images.githubusercontent.com/17649470/132834486-28c05987-2c25-4826-bea9-0eaa31e11ccd.png)
+
+Arduino: 1.8.16 (Windows 10), Board: "Arduino Nano, ATmega328P (Old Bootloader)"
+Sketch uses 6474 bytes (21%) of program storage space. Maximum is 30720 bytes.
+Global variables use 1122 bytes (54%) of dynamic memory, leaving 926 bytes for local variables. Maximum is 2048 bytes.
+Sketch uses 6474 bytes (21%) of program storage space. Maximum is 30720 bytes.
+Global variables use 1122 bytes (54%) of dynamic memory, leaving 926 bytes for local variables. Maximum is 2048 bytes.
+An error occurred while uploading the sketch
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x02
+...
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+
+There are two different types of bootloaders active: Please select the other bootloader and try again.
+
+![image](https://user-images.githubusercontent.com/17649470/132834781-9ed2ac79-a384-4f27-b003-b4ac3abec37f.png)
+
