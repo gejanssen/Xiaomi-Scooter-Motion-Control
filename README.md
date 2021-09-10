@@ -2,7 +2,7 @@
 This code is forked from https://github.com/jelzo/Xiaomi-Scooter-Motion-Control
 I want two updates.
  - Feedback via ws2812 led about power
- - Gass trottle enabled (not legal)
+ - Gass trottle enabled **(not legal)**
 
 #  Electric scooter motion control adaptation
 A small hardware and software modification to legalize electric  Segway-Ninebot ES/MAX/Xiaomi M365-series scooters in The Netherlands.
@@ -69,7 +69,7 @@ ENSURE THE SCOOTER IS POWERED OFF, DO NOT POWER IT ON UNLESS REFITTED
 7. Remove the throttle by removing the rubber protector, loosening the allen srew, feeding the cable trough the headlight socked and sliding the throttle off.
 
 ### Wiring
-![Wiring Scheme](xiaomi-m365-pro-arduino.png)
+![Wiring Scheme](xiaomi-m365-pro-arduino-gass.png)
 
 Finish up wrapping the board in heat shrink tube and cover all remaining open connections in hot melt glue. 
 
