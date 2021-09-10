@@ -69,7 +69,7 @@ ENSURE THE SCOOTER IS POWERED OFF, DO NOT POWER IT ON UNLESS REFITTED
 7. Remove the throttle by removing the rubber protector, loosening the allen srew, feeding the cable trough the headlight socked and sliding the throttle off.
 
 ### Wiring
-![Wiring Scheme](Arduino_Wiring_Scheme_v1.0.png?raw=true "Wiring Scheme")
+![Wiring Scheme](xiaomi-m365-pro-arduino.png)
 
 Finish up wrapping the board in heat shrink tube and cover all remaining open connections in hot melt glue. 
 
